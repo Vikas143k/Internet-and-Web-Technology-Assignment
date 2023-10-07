@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .con{
+            font-size: 50px;
+            font-weight: bold;
+            display: grid;
+            width: 100%;
+            height: 700px;
+            grid-gap: 10px;
+            background-color: brown;
+            grid-template-areas:
+                'a a d d e f'
+                'b c d d e g'
+                'h i i j j k'
+            ;
+           
+
+        }
+        .a{
+            display: grid;
+            text-align: center;
+            align-content: center;
+        }
+        @media only screen and  (max-width:600px){
+           .con{
+            grid-template-areas: 
+            'a'
+            'b'
+            'c'
+            'd'
+            'e'
+            'f'
+            'g'
+            'h'
+            'i'
+            'j'
+            'k'
+            ;
+            grid-gap: 1px;
+            background-color: white;
+        }
+    }
+        #a{
+            grid-area: a;
+            background-color: aqua;
+        }
+        #b{
+            grid-area: b;
+            background-color: aqua;
+        }
+        #c{
+            grid-area: c;
+            background-color: aqua;
+        }
+        #d{
+            grid-area: d;
+            background-color: aqua;
+        }
+        #e{
+            grid-area: e;
+            background-color: aqua;
+        }
+        #f{
+            grid-area: f;
+            background-color: aqua;
+        }
+        #g{
+            grid-area: g;
+            background-color: aqua;
+        }
+        #h{
+            grid-area: h;
+            background-color: aqua;
+        }
+        #i{
+            grid-area: i;
+            background-color: aqua;
+        }
+        #j{
+            grid-area: j;
+            background-color: aqua;
+        }
+        #k{
+            grid-area: k;
+            background-color: aqua;
+        }
+        .a{
+          text-align: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="a" id="a">1</div>
+        <div class="a" id="b">2</div>
+        <div class="a" id="c">3</div>
+        <div class="a" id="d">4</div>
+        <div class="a" id="e">5</div>
+        <div class="a" id="f">6</div>
+        <div class="a" id="g">7</div>
+        <div class="a" id="h">8</div>
+        <div class="a" id="i">9</div>
+        <div class="a" id="j">10</div>
+        <div class="a" id="k">11</div>
+    </div>
+
+
+     
+</body>
+</html>
